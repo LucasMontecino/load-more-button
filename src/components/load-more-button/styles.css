@@ -19,3 +19,32 @@
     height: 200px;
     object-fit: cover;
 }
+
+.btn {
+    margin: 20px 0 10px 0;
+    border: none;
+    outline: none;
+    background-color: #212121;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    transition: 0.3s;
+}
+
+.inactive {
+    cursor: not-allowed;
+}
+
+.btn:hover {
+    background-color: #242424;
+}
+
+@media only screen and (max-width: 1020px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .container {
+        grid-template-columns: 1fr
+    }
+}
